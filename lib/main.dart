@@ -25,6 +25,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('data'),);
+    return Center(child: Text('datadfgdsrgbd'),);
   }
 }
