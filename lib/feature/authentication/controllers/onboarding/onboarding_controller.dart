@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:socialclone/feature/authentication/screens/login/login.dart';
 
 class OnboardingController extends GetxController {
 
@@ -16,6 +17,7 @@ class OnboardingController extends GetxController {
   }
    void nextPage(){
     if(currentPageIndex.value==2) {
+      Get.offAll(() => LoginScreen());
       return;
     }
     currentPageIndex.value++;
