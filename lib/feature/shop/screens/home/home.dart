@@ -5,6 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/comon/widgets/products/cart/cart_counter_icon.dart';
 import 'package:socialclone/comon/widgets/textfields/search_bar.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/home_appbar.dart';
+import 'package:socialclone/feature/shop/screens/home/widgets/home_categories.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/constants/sizes.dart';
@@ -21,29 +22,27 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-
           SizedBox(height: USizes.profilePrimaryHeaderHeight * 2),
 
-          // Home Category Appbar
-          Text(UTexts.popularCategories, style: Theme
-              .of(context)
-              .textTheme
-              .headlineSmall!
-              .apply(color: UColors.white),),
-
-
+          // Primary Header Container
           UPrimaryHeaderContainer(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [UHomeAppbar(context)],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                UHomeAppbar(context),
+                SizedBox(height: USizes.spaceBtwSections),
+                 UHomeCategories(context)
+
+              ],
             ),
           ),
+
           // Search Bar
-
-          USearchBar()
-
+          USearchBar(),
         ],
       ),
     );
   }
+
+
 }
