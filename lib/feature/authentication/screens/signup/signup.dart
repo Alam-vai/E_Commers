@@ -132,7 +132,6 @@ class SignupScreen extends StatelessWidget {
               // ----------------[Footer]-------------
               SizedBox(height: USizes.spaceBtwSections),
               // Social Media Sign In Buttons
-              Uloginsocial(),
 
               //-----------------[Footer]-----------------//
               Uloginsocial(),
