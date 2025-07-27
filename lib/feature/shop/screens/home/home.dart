@@ -8,6 +8,7 @@ import 'package:socialclone/feature/shop/screens/home/widgets/home_appbar.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/constants/sizes.dart';
+import 'package:socialclone/utils/constants/texts.dart';
 import '../../../../comon/widgets/appbar/appbar.dart';
 import '../../../../comon/widgets/custom_shape/circular_container.dart';
 import '../../../../utils/helpers/device_helpers.dart';
@@ -20,7 +21,15 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+
           SizedBox(height: USizes.profilePrimaryHeaderHeight * 2),
+
+          // Home Category Appbar
+          Text(UTexts.popularCategories, style: Theme
+              .of(context)
+              .textTheme
+              .headlineSmall!
+              .apply(color: UColors.white),),
 
 
           UPrimaryHeaderContainer(
