@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/feature/authentication/screens/forget_password/forget_password.dart';
+import 'package:socialclone/navigation_menu.dart';
 
 import '../../../../../comon/widgets/button/elevated_button.dart';
 import '../../../../../utils/constants/sizes.dart';
@@ -46,7 +47,7 @@ Column ULoginForm() {
 
           // Forgot Password
           TextButton(
-            onPressed: () => Get.to(() => ForgetPassword()),
+            onPressed: () => Get.to(() => ForgetPasswordScreen()),
             child: Text(UTexts.forgetPassword),
           ),
         ],
@@ -54,7 +55,7 @@ Column ULoginForm() {
       SizedBox(height: USizes.spaceBtwSections),
 
       // Sign In Button
-      UElevatedButton(onPressed: () {}, child: Text(UTexts.signIn)),
+      UElevatedButton(onPressed: () => Get.to(()=>NavigationMenu()), child: Text(UTexts.signIn)),
 
       // Create Account Button
       SizedBox(
