@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:socialclone/feature/shop/screens/home/home.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/helpers/device_helpers.dart';
 import 'package:socialclone/utils/helpers/helper_functions.dart';
@@ -47,7 +48,7 @@ class NavigationController extends GetxController {
 
   List<Widget> screens = [
     // Replace these with your actual screens
-    Center(child: Text("Home Screen")),
+        HomeScreen(),
     Center(child: Text("Store Screen")),
     Center(child: Text("Wishlist Screen")),
     Center(child: Text("Profile Screen")),
