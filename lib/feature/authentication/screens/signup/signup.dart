@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/comon/styles/padding.dart';
 import 'package:socialclone/comon/widgets/button/elevated_button.dart';
+import 'package:socialclone/feature/authentication/screens/signup/verify_email.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/constants/texts.dart';
 
@@ -122,7 +123,7 @@ class SignupScreen extends StatelessWidget {
               SizedBox(height: 20),
 
               UElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => VerifyEmailScreen()),
                 child: Text(UTexts.createAccount),
               ),
 

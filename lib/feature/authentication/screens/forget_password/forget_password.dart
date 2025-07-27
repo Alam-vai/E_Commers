@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+
 import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/comon/styles/padding.dart';
 import 'package:socialclone/comon/widgets/button/elevated_button.dart';
@@ -9,8 +9,8 @@ import 'package:socialclone/feature/authentication/screens/forget_password/reset
 import 'package:socialclone/utils/constants/sizes.dart';
 import 'package:socialclone/utils/constants/texts.dart';
 
-class ForgetPassword extends StatelessWidget {
-  const ForgetPassword({super.key});
+class ForgetPasswordScreen extends StatelessWidget {
+  const ForgetPasswordScreen ({super.key});
 
   @override
   Widget build(BuildContext context) {
