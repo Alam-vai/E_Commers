@@ -17,7 +17,7 @@ class UPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return URoundedEdgesContainer(
       child: Container(
-        height: UDeviceHelper.getScreenHeight(context) * 0.4,
+        height: 320,
         color: UColors.primary,
         child: Stack(
           children: [
@@ -34,7 +34,7 @@ class UPrimaryHeaderContainer extends StatelessWidget {
               top: -50,
               right: -250,
               child: UCircularContainer(
-                height: UDeviceHelper.getScreenHeight(context) * 0.4,
+                  height: 320,
                 width: UDeviceHelper.getScreenHeight(context) * 0.4,
                 backgroundColor: UColors.white.withOpacity(0.2), // Fix here
               ),

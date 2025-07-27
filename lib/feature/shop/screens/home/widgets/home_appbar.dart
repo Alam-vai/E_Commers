@@ -5,7 +5,7 @@ import '../../../../../comon/widgets/appbar/appbar.dart';
 import '../../../../../comon/widgets/products/cart/cart_counter_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 
-UAppBar UHomeAppbar(BuildContext context) {
+UAppBar UHomeAppbar (BuildContext context) {
   return UAppBar(
     title: Column(
       children: [
