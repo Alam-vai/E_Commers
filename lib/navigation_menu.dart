@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/feature/shop/screens/home/home.dart';
 import 'package:socialclone/utils/constants/colors.dart';
-import 'package:socialclone/utils/helpers/device_helpers.dart';
+
 import 'package:socialclone/utils/helpers/helper_functions.dart';
 
 class NavigationMenu extends StatelessWidget {

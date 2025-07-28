@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:socialclone/utils/constants/sizes.dart';
 import 'package:socialclone/utils/images.dart';
 
-import '../../../../../comon/widgets/custom_shape/circular_container.dart';
+
 import '../../../../../comon/widgets/image_text/vertical_image_text.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/texts.dart';
