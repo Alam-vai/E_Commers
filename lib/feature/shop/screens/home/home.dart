@@ -31,8 +31,9 @@ class HomeScreen extends StatelessWidget {
               children: [
                 UHomeAppbar(context),
                 SizedBox(height: USizes.spaceBtwSections),
-                 UHomeCategories(context)
 
+                // Home  Categories
+                UHomeCategoires(),
               ],
             ),
           ),
@@ -43,6 +44,6 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-
-
 }
+
+
