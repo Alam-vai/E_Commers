@@ -19,7 +19,7 @@ class NavigationMenu extends StatelessWidget {
     return Scaffold(
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
       bottomNavigationBar: Obx(
-        () => NavigationBar(
+            () => NavigationBar(
           elevation: 0,
           backgroundColor: dark ? UColors.dark : UColors.light,
           indicatorColor: dark
@@ -48,7 +48,7 @@ class NavigationController extends GetxController {
 
   List<Widget> screens = [
     // Replace these with your actual screens
-        HomeScreen(),
+    HomeScreen(),
     Center(child: Text("Store Screen")),
     Center(child: Text("Wishlist Screen")),
     Center(child: Text("Profile Screen")),

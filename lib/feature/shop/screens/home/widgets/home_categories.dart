@@ -1,48 +1,46 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:socialclone/utils/constants/sizes.dart';
+import 'package:socialclone/utils/images.dart';
 
 import '../../../../../comon/widgets/custom_shape/circular_container.dart';
+import '../../../../../comon/widgets/image_text/vertical_image_text.dart';
 import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/texts.dart';
 
-Column UHomeCategories(BuildContext context) {
-  return Column(
-    children: [
-      Text(
-        UTexts.popularCategories,
-        style: Theme.of(
-          context,
-        ).textTheme.headlineSmall!.apply(color: UColors.white),
-      ),
-      SizedBox(height: USizes.spaceBtwItems / 2),
+class UHomeCategoires extends StatelessWidget {
+  const UHomeCategoires({super.key});
 
-      SizedBox(
-        height: 80,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 10,
+  @override
+  Widget build(BuildContext context) {
+    return Column(
 
-          itemBuilder: (context, index) {
-            return Column(
-              children: [
-                UCircularContainer(height: 56, width: 56),
-                SizedBox(
-                  width:55,
-                  child: Text(
-                    "Sport Category",
-                    style: Theme.of(context).textTheme.labelMedium!
-                        .apply(color: UColors.white),overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ],
-            );
-          },
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+
+          UTexts.popularCategories,
+
+          style: Theme.of(
+            context,
+          ).textTheme.headlineSmall!.apply(color: UColors.white),
         ),
-      ),
-    ],
-  );
+        const SizedBox(height: 10),
+        SizedBox(
+          height: 80,
+          child: ListView.separated(
+            separatorBuilder: (context, index) => SizedBox(width:USizes.spaceBtwItems,),
+            scrollDirection: Axis.horizontal,
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return UVerticalImageText(
+                title: 'sou',
+                image: UImages.sportsIcon,
+                textColor: UColors.white,
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
 }
