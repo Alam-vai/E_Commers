@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:socialclone/comon/widgets/images/rounded_image.dart';
 
 import 'package:socialclone/comon/widgets/textfields/search_bar.dart';
 
@@ -8,12 +11,16 @@ import 'package:socialclone/feature/shop/screens/home/widgets/primary_header_con
 import 'package:socialclone/feature/shop/screens/home/widgets/promo_slider.dart';
 
 import 'package:socialclone/utils/constants/sizes.dart';
+import 'package:socialclone/utils/images.dart';
+
+import '../../controllers/home/home_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final  controller = Get.put(HomeController());
     return Scaffold(
       body: Column(
         children: [
@@ -44,7 +51,18 @@ class HomeScreen extends StatelessWidget {
 
           ///////////////Lower Part////////////////
           // Banners
-          Padding(padding: const EdgeInsets.all(8.0), child: UPromoSlider()),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: UPromoSlider(
+              banners: [
+                UImages.homeBanner1,
+                UImages.homeBanner2,
+                UImages.homeBanner3,
+                UImages.homeBanner4,
+                UImages.homeBanner5,
+              ],
+            ),
+          ),
         ],
       ),
     );
