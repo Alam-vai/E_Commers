@@ -4,7 +4,7 @@ import 'package:socialclone/feature/shop/controllers/home/home_controller.dart';
 
 import '../../../../../comon/widgets/images/rounded_image.dart';
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/images.dart';
+
 import 'banners_dot_navigation.dart';
 
 class UPromoSlider extends StatelessWidget {

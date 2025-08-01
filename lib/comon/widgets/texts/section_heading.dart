@@ -1,6 +1,4 @@
-
-
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class USectionHeading extends StatelessWidget {
@@ -9,7 +7,7 @@ class USectionHeading extends StatelessWidget {
     required this.title,
     this.buttonTitle = 'View all',
     this.onPressed,
-    this.showActionButton = true
+    this.showActionButton = true,
   });
 
   final String title, buttonTitle;
@@ -22,7 +20,8 @@ class USectionHeading extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(title, style: Theme.of(context).textTheme.headlineSmall, maxLines: 1, overflow: TextOverflow.ellipsis),
-        if(showActionButton) TextButton(onPressed: onPressed, child: Text(buttonTitle))
+        if (showActionButton)
+          TextButton(onPressed: onPressed, child: Text(buttonTitle)),
       ],
     );
   }

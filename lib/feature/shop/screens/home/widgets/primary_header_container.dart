@@ -9,9 +9,12 @@ import '../../../../../utils/helpers/device_helpers.dart';
 class UPrimaryHeaderContainer extends StatelessWidget {
   const UPrimaryHeaderContainer({
     super.key, required this.child,
+    this.height = 320,
   });
 
   final Widget child;
+
+  final dynamic height;
 
   @override
   Widget build(BuildContext context) {
