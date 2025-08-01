@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:socialclone/comon/styles/shadow.dart';
-import 'package:socialclone/comon/widgets/images/rounded_image.dart';
+
 
 import 'package:socialclone/comon/widgets/textfields/search_bar.dart';
 
@@ -10,7 +9,7 @@ import 'package:socialclone/feature/shop/screens/home/widgets/home_appbar.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/home_categories.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/promo_slider.dart';
-import 'package:socialclone/utils/constants/colors.dart';
+
 
 import 'package:socialclone/utils/constants/sizes.dart';
 import 'package:socialclone/utils/images.dart';

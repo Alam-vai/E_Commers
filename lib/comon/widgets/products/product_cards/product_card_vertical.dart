@@ -10,6 +10,8 @@ import '../../../../utils/constants/sizes.dart';
 
 import '../../../styles/shadow.dart';
 import '../../Product_price_text.dart';
+import '../../texts/brand_title_text.dart';
+import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_title_text.dart';
 
 class UProductCardVertical extends StatelessWidget {
@@ -73,23 +75,7 @@ class UProductCardVertical extends StatelessWidget {
                   UProductTitleText(title: "Product Title", smallSize: true),
                   const SizedBox(height: USizes.spaceBtwItems / 2),
                   // Product brand and verification
-                  Row(
-                    children: [
-                      Text(
-                        "Bata",
-                        style: Theme.of(context).textTheme.labelMedium,
-
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(height: 15),
-                      Icon(
-                        Iconsax.verify5,
-                        color: UColors.primary,
-                        size: USizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  UBrandTitleWithVerifyIcon(title: 'Bata',),
 
                   // Product Price
                   Row(
@@ -135,5 +121,9 @@ class UProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
+
+
 
 

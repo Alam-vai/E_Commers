@@ -50,7 +50,7 @@ class NavigationController extends GetxController {
   List<Widget> screens = [
     // Replace these with your actual screens
     HomeScreen(),
-    StoreScrrem(),
+    StoreScreen(),
     Center(child: Text("Wishlist Screen")),
     Center(child: Text("Profile Screen")),
   ];
