@@ -33,7 +33,7 @@ class _StoreScreenState extends State<StoreScreen> {
               flexibleSpace: Column(
                 children: [
                   UStorePrimaryHeader(),
-                  SizedBox(height: USizes.spaceBtwItems,)
+                  SizedBox(height: USizes.spaceBtwItems,),
                   // Brand Heading
                   Padding(
                     padding: const EdgeInsets.symmetric(
