@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/enums.dart';
@@ -9,8 +9,11 @@ import '../images/rounded_image.dart';
 import '../texts/brand_title_with_verify_icon.dart';
 
 class UBrandCard extends StatelessWidget {
+  final dynamic showBorder;
+
   const UBrandCard({
     super.key,
+    this.showBorder = true,
   });
 
   @override
@@ -18,7 +21,8 @@ class UBrandCard extends StatelessWidget {
     return URoundedContainer(
 
       width: USizes.brandCardWidth,
-      showBorder: true,
+      height: USizes.brandCardHeight,
+      showBorder: showBorder,
       padding: const EdgeInsets.all(8.0),
       backgroundColor: Colors.transparent,
       child: Row(

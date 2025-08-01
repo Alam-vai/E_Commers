@@ -10,7 +10,7 @@ import '../../../../utils/constants/sizes.dart';
 
 import '../../../styles/shadow.dart';
 import '../../Product_price_text.dart';
-import '../../texts/brand_title_text.dart';
+
 import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_title_text.dart';
 
