@@ -31,16 +31,17 @@ class UProductCardVertical extends StatelessWidget {
           color: dark ? UColors.darkGrey : UColors.white,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           // Thumbnail  Favourite Button and discount Tag
           children: [
             URoundedContainer(
-              width: 180,
+              height: 180,
               padding: const EdgeInsets.all(1),
               backgroundColor: dark ? UColors.dark : UColors.light,
               child: Stack(
                 children: [
                   // Thumbnail
-                  URoundedImage(imageUrl: "assets/products/product 2.png"),
+                  Center(child: URoundedImage(imageUrl: "assets/products/product 2.png")),
                   // Discount Tag
                   Positioned(
                     top: 12,
