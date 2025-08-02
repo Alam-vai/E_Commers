@@ -20,7 +20,6 @@ class UBrandCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return URoundedContainer(
 
-      width: USizes.brandCardWidth,
       height: USizes.brandCardHeight,
       showBorder: showBorder,
       padding: const EdgeInsets.all(8.0),

@@ -61,7 +61,11 @@ class _StoreScreenState extends State<StoreScreen> {
                                 physics: const NeverScrollableScrollPhysics(),
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
-                                itemBuilder: (context, index) => UBrandCard(),
+                                itemBuilder: (context, index) => SizedBox(
+
+                                  width: USizes.brandCardWidth,
+                                  child: UBrandCard(),
+                                ),
                               ),
                             ),
                           ],
@@ -82,15 +86,9 @@ class _StoreScreenState extends State<StoreScreen> {
               ),
             ];
           },
-          body: TabBarView(
-            children: [
-              UCategoryTab(),
-
-            ],
-          ),
+          body: TabBarView(children: [UCategoryTab()]),
         ),
       ),
     );
   }
 }
-
