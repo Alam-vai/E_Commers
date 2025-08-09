@@ -9,6 +9,8 @@ import 'package:socialclone/utils/constants/colors.dart';
 
 import 'package:socialclone/utils/helpers/helper_functions.dart';
 
+import 'feature/personalization/screens/profile/profile.dart';
+
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
@@ -54,6 +56,6 @@ class NavigationController extends GetxController {
     HomeScreen(),
     StoreScreen(),
      WishlistScreen(),
-    Center(child: Text("Profile Screen")),
+    ProfileScreen(),
   ];
 }

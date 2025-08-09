@@ -7,7 +7,7 @@ import 'package:socialclone/comon/widgets/textfields/search_bar.dart';
 
 import 'package:socialclone/feature/shop/screens/home/widgets/home_appbar.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/home_categories.dart';
-import 'package:socialclone/feature/shop/screens/home/widgets/primary_header_container.dart';
+import 'package:socialclone/comon/widgets/custom_shape/primary_header_container.dart';
 import 'package:socialclone/feature/shop/screens/home/widgets/promo_slider.dart';
 
 

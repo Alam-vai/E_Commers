@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../../../comon/widgets/custom_shape/circular_container.dart';
+import 'circular_container.dart';
 
-import '../../../../../comon/widgets/custom_shape/rounded_edges_container.dart';
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/helpers/device_helpers.dart';
+import 'rounded_edges_container.dart';
+import '../../../utils/constants/colors.dart';
+import '../../../utils/helpers/device_helpers.dart';
 
 class UPrimaryHeaderContainer extends StatelessWidget {
   const UPrimaryHeaderContainer({
