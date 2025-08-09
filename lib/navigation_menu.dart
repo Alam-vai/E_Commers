@@ -46,6 +46,7 @@ class NavigationMenu extends StatelessWidget {
 
 // ✅ Renamed controller to avoid naming conflict
 class NavigationController extends GetxController {
+  static NavigationController get instance =>Get.find();
   RxInt selectedIndex = 0.obs;
 
   List<Widget> screens = [
