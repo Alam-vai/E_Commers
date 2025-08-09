@@ -11,7 +11,11 @@ void main() {
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   // Portrait Up The Device
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitDown]);
 
+ /// SystemChrome.setPreferredOrientations([DeviceOrientation.portraitDown]);
+
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((_) {
+    runApp(MyApp());
+  });
   runApp(MyApp());
 }
