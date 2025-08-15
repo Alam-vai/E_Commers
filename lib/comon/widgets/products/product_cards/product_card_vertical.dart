@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:socialclone/comon/widgets/custom_shape/rounded_container.dart';
 import 'package:socialclone/comon/widgets/icons/circular_icon.dart';
@@ -6,6 +8,7 @@ import 'package:socialclone/comon/widgets/images/rounded_image.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/helpers/helper_functions.dart';
 
+import '../../../../feature/shop/screens/product_details/product_details.dart';
 import '../../../../utils/constants/sizes.dart';
 
 import '../../../styles/shadow.dart';
@@ -21,7 +24,9 @@ class UProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = UHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: (){},
+      onTap: (){
+        Get.to(() => const ProductDetailsScreen());
+      },
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -54,7 +59,7 @@ class UProductCardVertical extends StatelessWidget {
                         horizontal: USizes.sm,
                         vertical: USizes.xs,
                       ),
-                      child: UProductPriceText(),
+                      child: UProductPriceText(price: '210',),
                     ),
                   ),
                   //Favourite Button
