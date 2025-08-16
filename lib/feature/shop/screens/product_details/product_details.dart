@@ -6,6 +6,7 @@ import 'package:socialclone/comon/widgets/icons/circular_icon.dart';
 import 'package:socialclone/comon/widgets/images/circular_image.dart';
 import 'package:socialclone/comon/widgets/texts/brand_title_with_verify_icon.dart';
 import 'package:socialclone/comon/widgets/texts/product_title_text.dart';
+import 'package:socialclone/feature/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:socialclone/feature/shop/screens/product_details/widgets/product_thumbanail_and_slider.dart';
 import 'package:socialclone/utils/constants/colors.dart';
 import 'package:socialclone/utils/constants/sizes.dart';
