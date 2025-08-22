@@ -13,6 +13,7 @@ import 'package:socialclone/feature/shop/screens/product_details/widgets/product
 import 'package:socialclone/utils/helpers/helper_functions.dart';
 
 import '../../../../comon/styles/padding.dart';
+import '../../../../utils/constants/sizes.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   const ProductDetailsScreen({super.key});
